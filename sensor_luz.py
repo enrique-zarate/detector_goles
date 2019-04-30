@@ -1,17 +1,22 @@
 import RPi.GPIO as gpio
 from time import sleep
 
-foto = 4
-#led2=24
-#led3=25
+foto1 = 4
+foto2 = #falta definir
+foto3 = #falta definir
+foto4 = #falta definir
+
 gpio.setmode(gpio.BCM)
 gpio.setup(foto,gpio.IN)
-#gpio.setup(led2,gpio.OUT)
-#gpio.setup(led3,gpio.OUT)
+
 while True:
-    if gpio.input(foto) == False:
+    if gpio.input(foto1) == False or gpio.input(foto2) == False or
+    gpio.input(foto3) == False or gpio.input(foto4) == False:
         print("Gol")
+        contador_goles = contador_goles + 1 #este el contador
         sleep(2)
+
+
         
 '''
 
