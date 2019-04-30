@@ -3,7 +3,7 @@ import RPi.GPIO as gpio
 from time import sleep
 
 foto1 = 4
-foto2 = 5
+foto2 = 3
 foto3 = 6
 foto4 = 7
 
@@ -16,11 +16,13 @@ contador_goles = 0
 
 def sensor(llamada):
 	global contador_goles
-	contador_goles = contador_goles + 1 #este el contadorr
+	contador_goles = contador_goles + 1 #este el contador
 	print(contador_goles)
 	
-
-gpio.add_event_detect(foto1,gpio.RISING, callback=sensor, bouncetime=100)
+if foto1 == True:
+	gpio.add_event_detect(foto1,gpio.RISING, callback=sensor, bouncetime=100)
+if foto2 == True:
+	gpio.add_event_detect(foto2,gpio.RISING, callback=sensor, bouncetime=100)
 
 
 app=Flask(__name__)
