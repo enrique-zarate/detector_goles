@@ -4,7 +4,7 @@ app=Flask(__name__)
 
 
 def sensor():
-	return "goool"
+	return "gooolazoooo tony"
 
 
 @app.route('/')
