@@ -1,0 +1,16 @@
+body{
+    font-family: 'Righteous', cursive;
+    background-image: url("sensor_web.png");
+    background-size: 1366px
+ }
+
+ .marcador{
+
+    margin-top: 33%;
+    margin-left: 26%;
+    font-size: 115px;
+    color: white;
+    font-weight: bold;
+
+ }
+ 
