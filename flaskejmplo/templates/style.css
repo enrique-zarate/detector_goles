@@ -1,7 +1,7 @@
 body{
     font-family: 'Righteous', cursive;
     background-image: url("/static/sensor_web.png");
-    background-size: 1366px
+    background-size: 1366px;
  }
 
 .marcador{
