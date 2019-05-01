@@ -1,19 +1,53 @@
 <!DOCTYPE html>
+<!-- Visualizador que realice un refresh cada "X" segundos. 
+       -->
    <html>
       <head>
          <title>Visualizador de Goles</title>
-         <!--<meta http-equiv="refresh" content="6000" /> -->
           <link href='style.css' rel='stylesheet' type='text/css' />
          <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+         <meta http-equiv="refresh" content="5000" /> <!-- refresco de la pagina-->
       </head>
+      <!-- empieza el css -->
+     <style>
+   body{
+    font-family: 'Righteous', cursive; <!-- declaramos la fuente que se usara en el body -->
+    background-image: url("sensor_web.png");<!-- ponemos la imagen de fondo -->
+    background-size: 1366px 
+ }
 
-      <body>
+.marcador{        <!-- div de la clase marcador -->
+    margin-top: 52% !important;
+    margin-left: 40% !important;
+    font-size: 115px;
+    color: white;
+    font-weight: bold;
+}
+
+.equipoA{
+    
+    font-size: 115px;
+    color: white;
+    font-weight: bold;
+
+   
+ 
+
+      
+      </style>
+      <body style="background-image: url('/static/sensor_web.png');">
             
             <div class="marcador">
-               <p>0
-                  </p>
-      
+               <p>{{dat}}</p>
             </div>
-         
+            <!--
+            <div class="equipoA">
+               <p>Equipo A</p>
+            </div>
+            
+            <div class="equipoB">
+               <p>Equipo B</p>
+            </div>
+-->
       </body>
    </html>
